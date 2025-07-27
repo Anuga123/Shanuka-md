@@ -1,0 +1,31 @@
+{
+  "name": "ANUWH-MD",
+  "description": "Javascript WhatsApp bot made by Cyber Anuwh",
+  "logo": "https://postimg.cc/hhNnXtQ0",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "ALIVE_IMG": {
+      "description": "https://postimg.cc/hhNnXtQ0",
+      "required": true
+    },
+    
+    "ALIVE_MSG": {
+      "description": "I am alive now",
+      "required": true
+    }   
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
